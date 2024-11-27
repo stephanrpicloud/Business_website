@@ -169,9 +169,9 @@ if selected == "Our Products":
     with cl2:
         col1, col2, col3 = st.columns(3)
     with col3:
-        st.image("/Users/stephanraj/Projects/Sandy Website/st/pages/ABSORBENT GAUZE 1.png", caption="Absorbent Gauze", use_container_width=True)
+        st.image("pages/ABSORBENT GAUZE 1.png", caption="Absorbent Gauze", use_container_width=True)
     with col2:
-        st.image("/Users/stephanraj/Projects/Sandy Website/st/pages/ABSORBENT GAUZE 2.png", caption="Bandage Cloth", use_container_width=True)
+        st.image("pages/ABSORBENT GAUZE 2.png", caption="Bandage Cloth", use_container_width=True)
     with col1:
         st.write(
             """
@@ -222,7 +222,7 @@ if selected == "Our Products":
     with cl2:
         col1, col2, col3 = st.columns([6,1,8])
     with col1:
-        st.image("/Users/stephanraj/Projects/Sandy Website/st/pages/SWABS (STERILIE 5 PCS) .png", caption="Gauze Swab",use_container_width=True)
+        st.image("pages/SWABS (STERILIE 5 PCS) .png", caption="Gauze Swab",use_container_width=True)
     with col3:
         
         st.markdown("<div style='height: 80px;'></div>", unsafe_allow_html=True)
@@ -259,9 +259,9 @@ if selected == "Our Products":
     with cl2:
         col1, col2, col3 = st.columns(3)
     with col2:
-        st.image("/Users/stephanraj/Projects/Sandy Website/st/pages/STERILE.png", caption="Absorbent Gauze", use_container_width=True)
+        st.image("pages/STERILE.png", caption="Absorbent Gauze", use_container_width=True)
     with col3:
-        st.image("/Users/stephanraj/Projects/Sandy Website/st/pages/STERILE 2.png", caption="Bandage Cloth", use_container_width=True)
+        st.image("pages/STERILE 2.png", caption="Bandage Cloth", use_container_width=True)
     with col1:
         st.markdown("<div style='height: 80px;'></div>", unsafe_allow_html=True)
         
@@ -289,12 +289,12 @@ if selected == "Our Products":
     with cl2:
         col1, col2, col3 = st.columns(3)
     with col1:
-        st.image("/Users/stephanraj/Projects/Sandy Website/st/pages/ROLLER BANDAGE 1.png", caption="ROLLER BANDAGE", use_container_width=True)
+        st.image("pages/ROLLER BANDAGE 1.png", caption="ROLLER BANDAGE", use_container_width=True)
     with col2:
         st.markdown("<div style='height: 190px;'></div>", unsafe_allow_html=True)
-        st.image("/Users/stephanraj/Projects/Sandy Website/st/pages/ROLLER BANDAGE 2.png", caption="ROLLER BANDAGE", use_container_width=True)
+        st.image("pages/ROLLER BANDAGE 2.png", caption="ROLLER BANDAGE", use_container_width=True)
     with col1:
-        st.image("/Users/stephanraj/Projects/Sandy Website/st/pages/ROLLER BANDAGE 3.png", caption="ROLLER BANDAGE", use_container_width=True)
+        st.image("pages/ROLLER BANDAGE 3.png", caption="ROLLER BANDAGE", use_container_width=True)
     with col3:
         
         st.markdown("<div style='height: 80px;'></div>", unsafe_allow_html=True)
@@ -345,7 +345,7 @@ if selected == "Our Products":
     with col2:
         
         st.markdown("<div style='height: 80px;'></div>", unsafe_allow_html=True)
-        st.image("/Users/stephanraj/Projects/Sandy Website/st/pages/ABDOMINAL PAD : MOPPING PAD.png", caption="ABDOMINAL PAD / MOPPING PAD", use_container_width=True)
+        st.image("pages/ABDOMINAL PAD : MOPPING PAD.png", caption="ABDOMINAL PAD / MOPPING PAD", use_container_width=True)
     
     with col1:
         # Description Section
@@ -420,7 +420,7 @@ if selected == "Our Products":
 
         #st.markdown("<div style='height: 80px;'></div>", unsafe_allow_html=True)
         
-        st.image("/Users/stephanraj/Projects/Sandy Website/st/pages/CANNULA FIXATOR.png", caption="CANNULA FIXATOR", use_container_width=True)
+        st.image("pages/CANNULA FIXATOR.png", caption="CANNULA FIXATOR", use_container_width=True)
     
     with col2:
         # Features Section
