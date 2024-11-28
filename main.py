@@ -1045,39 +1045,26 @@ if selected == "Contact":
 
     cl1, cl2, cl3 = st.columns([1, 5, 1])  # Adjust column widths for alignment
     with cl2:
-        col1,col2 = st.columns(2)
-        with col1:
-            st.markdown(
-                """
-                <div style="font-family: Serif; font-size: 18px; line-height: 1.8;">
-                    <b>Mfg. by :</b> <br>
-                    <b>SUNDARAM MEDICAL DEVICES</b> <br>
-                    8/162, J4, Meenakshiyapuram Main Road, <br>
-                    Sankarapandiyapuram, Chatrapatti - 626 102. <br>
-                    Via. Rajapalayam <br>
-                    <b>Contact :</b> 94431 57914 <br>
-                    <b>E-mail :</b> sundarammedicaldevices@gmail.com <br>
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
-        with col2:
-            st.markdown("<div style='height: 30px;'></div>", unsafe_allow_html=True)
-            st.markdown(
-                """
-                <div style="font-family: Serif; font-size: 18px; line-height: 1.8;">
-                    <b>Contact Person :</b> G. Muthu <br>
-                    <b>Customer Care :</b> 94431 57914 <br>
-                    <b>Office :</b> 04563 - 257 302, 258 302, 257 805 <br>
-                    <b>Mob :</b> 94431 57914, 94431 57302
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
-
+        st.markdown(
+            """
+            <div style="font-family: Serif; font-size: 18px; line-height: 1.8;">
+                <b>Mfg. by :</b> <br>
+                <b>SUNDARAM MEDICAL DEVICES</b> <br>
+                8/162, J4, Meenakshiyapuram Main Road, <br>
+                Sankarapandiyapuram, Chatrapatti - 626 102. <br>
+                Via. Rajapalayam <br>
+                <b>Contact Person :</b> G. Muthu <br>
+                <b>Contact :</b> 94431 57914 <br>
+                <b>E-mail :</b> sundarammedicaldevices@gmail.com <br>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+            
     cl1, cl2, cl3 = st.columns([1, 5, 1])
 
     with cl2:
+        st.markdown("<div style='height: 50px;'></div>", unsafe_allow_html=True)
         st.header(":mailbox: Get In Touch With Us!")
 
 
