@@ -1037,6 +1037,7 @@ if selected == "Our Products":
 
         st.download_button(
             label="Download Catalogue",
+            type="primary",
             data=pdf_data,
             file_name="Catalouge.pdf",
             mime="application/pdf"
