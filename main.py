@@ -1,10 +1,17 @@
 from streamlit_option_menu import option_menu 
 import streamlit as st 
 import base64
+import os
+
+# Configure dynamic port for hosting platforms
+if "PORT" in os.environ:
+    port = int(os.environ.get("PORT"))
+    os.environ["STREAMLIT_SERVER_PORT"] = str(port)  # Set the port for Streamlit
+
 
 # Page configuration
 st.set_page_config(page_title="SUNDARAM MEDICAL DEVICES",
-                   page_icon='',
+                   page_icon='🩺',
                    layout="wide")
 
 # Add custom CSS for background image
@@ -36,7 +43,7 @@ def set_png_as_page_bg_and_style(png_file):
     return
 
 # Set background and header style
-set_png_as_page_bg_and_style("pages/BG.jpg")
+set_png_as_page_bg_and_style(os.path.join(os.getcwd(), "pages/BG.jpg"))
 
 
 # Title
@@ -221,9 +228,9 @@ if selected == "Our Products":
     with cl2:
         col1, col2, col3 = st.columns(3)
     with col3:
-        st.image("pages/ABSORBENT GAUZE 1.png", caption="Absorbent Gauze", use_container_width=True)
+        st.image(os.path.join(os.getcwd(), "pages/ABSORBENT GAUZE 1.png"), caption="Absorbent Gauze", use_container_width=True)
     with col2:
-        st.image("pages/ABSORBENT GAUZE 2.png", caption="Bandage Cloth", use_container_width=True)
+        st.image(os.path.join(os.getcwd(), "pages/ABSORBENT GAUZE 2.png"), caption="Bandage Cloth", use_container_width=True)
     with col1:
         st.write(
             """
@@ -274,7 +281,7 @@ if selected == "Our Products":
     with cl2:
         col1, col2, col3 = st.columns([6,1,8])
     with col1:
-        st.image("pages/SWABS (STERILIE 5 PCS) .png", caption="Gauze Swab",use_container_width=True)
+        st.image(os.path.join(os.getcwd(), "pages/SWABS (STERILIE 5 PCS) .png"), caption="Gauze Swab",use_container_width=True)
     with col3:
         
         st.markdown("<div style='height: 80px;'></div>", unsafe_allow_html=True)
@@ -311,9 +318,9 @@ if selected == "Our Products":
     with cl2:
         col1, col2, col3 = st.columns(3)
     with col2:
-        st.image("pages/STERILE.png", caption="Absorbent Gauze", use_container_width=True)
+        st.image(os.path.join(os.getcwd(), "pages/STERILE.png"), caption="Absorbent Gauze", use_container_width=True)
     with col3:
-        st.image("pages/STERILE 2.png", caption="Bandage Cloth", use_container_width=True)
+        st.image(os.path.join(os.getcwd(), "pages/STERILE 2.png"), caption="Bandage Cloth", use_container_width=True)
     with col1:
         st.markdown("<div style='height: 80px;'></div>", unsafe_allow_html=True)
         
@@ -341,12 +348,12 @@ if selected == "Our Products":
     with cl2:
         col1, col2, col3 = st.columns(3)
     with col1:
-        st.image("pages/ROLLER BANDAGE 1.png", caption="ROLLER BANDAGE", use_container_width=True)
+        st.image(os.path.join(os.getcwd(), "pages/ROLLER BANDAGE 1.png"), caption="ROLLER BANDAGE", use_container_width=True)
     with col2:
         st.markdown("<div style='height: 190px;'></div>", unsafe_allow_html=True)
-        st.image("pages/ROLLER BANDAGE 2.png", caption="ROLLER BANDAGE", use_container_width=True)
+        st.image(os.path.join(os.getcwd(), "pages/ROLLER BANDAGE 2.png"), caption="ROLLER BANDAGE", use_container_width=True)
     with col1:
-        st.image("pages/ROLLER BANDAGE 3.png", caption="ROLLER BANDAGE", use_container_width=True)
+        st.image(os.path.join(os.getcwd(), "pages/ROLLER BANDAGE 3.png"), caption="ROLLER BANDAGE", use_container_width=True)
     with col3:
         
         st.markdown("<div style='height: 80px;'></div>", unsafe_allow_html=True)
@@ -397,7 +404,7 @@ if selected == "Our Products":
     with col2:
         
         st.markdown("<div style='height: 80px;'></div>", unsafe_allow_html=True)
-        st.image("pages/ABDOMINAL PAD : MOPPING PAD.png", caption="ABDOMINAL PAD / MOPPING PAD", use_container_width=True)
+        st.image(os.path.join(os.getcwd(), "pages/ABDOMINAL PAD : MOPPING PAD.png"), caption="ABDOMINAL PAD / MOPPING PAD", use_container_width=True)
     
     with col1:
         # Description Section
@@ -472,7 +479,7 @@ if selected == "Our Products":
 
         #st.markdown("<div style='height: 80px;'></div>", unsafe_allow_html=True)
         
-        st.image("pages/CANNULA FIXATOR.png", caption="CANNULA FIXATOR", use_container_width=True)
+        st.image(os.path.join(os.getcwd(), "pages/CANNULA FIXATOR.png"), caption="CANNULA FIXATOR", use_container_width=True)
     
     with col2:
         # Features Section
@@ -528,7 +535,7 @@ if selected == "Our Products":
 
         #st.markdown("<div style='height: 80px;'></div>", unsafe_allow_html=True)
         
-        st.image("pages/DRESSING PAD : COMBINE DRESSING PAD.png", caption="DRESSING PAD / COMBINE DRESSING PAD", use_container_width=True)
+        st.image(os.path.join(os.getcwd(), "pages/DRESSING PAD : COMBINE DRESSING PAD.png"), caption="DRESSING PAD / COMBINE DRESSING PAD", use_container_width=True)
     
     with col1:
         # Product Description
@@ -575,7 +582,7 @@ if selected == "Our Products":
 
         st.markdown("<div style='height: 80px;'></div>", unsafe_allow_html=True)
         
-        st.image("pages/ELASTIC ADHESIVE BANDAGE & CREPE BANDAGE.png", caption="ELASTIC ADHESIVE BANDAGE & CREPE BANDAGE", use_container_width=True)
+        st.image(os.path.join(os.getcwd(), "pages/ELASTIC ADHESIVE BANDAGE & CREPE BANDAGE.png"), caption="ELASTIC ADHESIVE BANDAGE & CREPE BANDAGE", use_container_width=True)
     
     with col2:
         # Characteristics Section
@@ -628,13 +635,13 @@ if selected == "Our Products":
 
         st.markdown("<div style='height: 80px;'></div>", unsafe_allow_html=True)
         
-        st.image("pages/GAMJEE ROLL : PAD.png", caption="GAMJEE ROLL / PAD", use_container_width=True)
+        st.image(os.path.join(os.getcwd(), "pages/GAMJEE ROLL : PAD.png"), caption="GAMJEE ROLL / PAD", use_container_width=True)
     
     with col2:
 
         st.markdown("<div style='height: 150px;'></div>", unsafe_allow_html=True)
         
-        st.image("pages/GAMJEE ROLL : PAD 2.png", caption="GAMJEE ROLL / PAD", use_container_width=True)
+        st.image(os.path.join(os.getcwd(), "pages/GAMJEE ROLL : PAD 2.png"), caption="GAMJEE ROLL / PAD", use_container_width=True)
     
     with col1:
         
@@ -701,13 +708,13 @@ if selected == "Our Products":
 
         st.markdown("<div style='height: 150px;'></div>", unsafe_allow_html=True)
         
-        st.image("pages/SOFT ROLL : ORTHO CAST PADDING.png", caption="SOFT ROLL / ORTHO CAST PADDING", use_container_width=True)
+        st.image(os.path.join(os.getcwd(), "pages/SOFT ROLL : ORTHO CAST PADDING.png"), caption="SOFT ROLL / ORTHO CAST PADDING", use_container_width=True)
     
     with col2:
 
         st.markdown("<div style='height: 150px;'></div>", unsafe_allow_html=True)
         
-        st.image("pages/SOFT ROLL : ORTHO CAST PADDING 2.png", caption="SOFT ROLL / ORTHO CAST PADDING", use_container_width=True)
+        st.image(os.path.join(os.getcwd(), "pages/SOFT ROLL : ORTHO CAST PADDING 2.png"), caption="SOFT ROLL / ORTHO CAST PADDING", use_container_width=True)
     
     with col3:
         
@@ -758,13 +765,13 @@ if selected == "Our Products":
 
         st.markdown("<div style='height: 250px;'></div>", unsafe_allow_html=True)
         
-        st.image("pages/ABSORBENT COTTON WOOL 1.png", caption="ABSORBENT COTTON WOOL / ZIG ZAG COTTON", width = 500 )
+        st.image(os.path.join(os.getcwd(), "pages/ABSORBENT COTTON WOOL 1.png"), caption="ABSORBENT COTTON WOOL / ZIG ZAG COTTON", width = 500 )
     
     with col2:
 
         #st.markdown("<div style='height: 150px;'></div>", unsafe_allow_html=True)
         
-        st.image("pages/ABSORBENT COTTON WOOL 2.png", caption="ABSORBENT COTTON WOOL / ZIG ZAG COTTON", width = 250 )
+        st.image(os.path.join(os.getcwd(), "pages/ABSORBENT COTTON WOOL 2.png"), caption="ABSORBENT COTTON WOOL / ZIG ZAG COTTON", width = 250 )
     
     with col1:
         
@@ -831,7 +838,7 @@ if selected == "Our Products":
 
         st.markdown("<div style='height: 150px;'></div>", unsafe_allow_html=True)
         
-        st.image("pages/COTTON BALL.png", caption="COTTON BALL", width = 500 )
+        st.image(os.path.join(os.getcwd(), "pages/COTTON BALL.png"), caption="COTTON BALL", width = 500 )
     
     with col2:
         
@@ -898,7 +905,7 @@ if selected == "Our Products":
 
         st.markdown("<div style='height: 100px;'></div>", unsafe_allow_html=True)
         
-        st.image("pages/EXAMINATION GLOVES.png", caption="EXAMINATION GLOVES", width = 500 )
+        st.image(os.path.join(os.getcwd(), "pages/EXAMINATION GLOVES.png"), caption="EXAMINATION GLOVES", width = 500 )
     
     with col1:
         
@@ -976,13 +983,13 @@ if selected == "Our Products":
 
         st.markdown("<div style='height: 150px;'></div>", unsafe_allow_html=True)
         
-        st.image("pages/DIALYSIS KIT : DRESSING KIT.png", caption="DIALYSIS KIT / DRESSING KIT", use_container_width= True)
+        st.image(os.path.join(os.getcwd(), "pages/DIALYSIS KIT : DRESSING KIT.png"), caption="DIALYSIS KIT / DRESSING KIT", use_container_width= True)
     
     with col2:
 
         st.markdown("<div style='height: 150px;'></div>", unsafe_allow_html=True)
         
-        st.image("pages/DIALYSIS KIT : DRESSING KIT 2.png", caption="DIALYSIS KIT / DRESSING KIT", use_container_width = True )
+        st.image(os.path.join(os.getcwd(), "pages/DIALYSIS KIT : DRESSING KIT 2.png"), caption="DIALYSIS KIT / DRESSING KIT", use_container_width = True )
 
     with col3:
 
@@ -1086,4 +1093,4 @@ if selected == "Contact":
                 st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-        local_css("contact form style/syle.css")        
+        local_css(os.path.join(os.getcwd(), "contact form style", "style.css"))
