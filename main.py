@@ -85,7 +85,6 @@ selected = option_menu(
 )
 
 # About Us Section
-@st.cache_data(show_spinner=False)
 if selected == "About us":
     cl1, cl2, cl3 = st.columns([1, 8, 1])
     with cl2:
@@ -212,7 +211,7 @@ if selected == "About us":
             """, 
             unsafe_allow_html=True
         )
-@st.cache_data(show_spinner=False)
+
 if selected == "Our Products":
     #1st ABSORBENT GAUZE
 
@@ -1043,7 +1042,7 @@ if selected == "Our Products":
             file_name="Catalouge.pdf",
             mime="application/pdf"
         )
-@st.cache_data(show_spinner=False)
+
 if selected == "Contact":
     st.markdown(
         """
